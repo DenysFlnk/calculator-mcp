@@ -1,7 +1,7 @@
 # Calculator MCP Server 🧮
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/yourusername/calculator-mcp)](https://hub.docker.com/r/yourusername/calculator-mcp)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/calculator-mcp-server)](https://github.com/yourusername/calculator-mcp-server)
+[![GitHub stars](https://img.shields.io/github/stars/DenysFlnk/calculator-mcp)](https://github.com/DenysFlnk/calculator-mcp/)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue)](https://python.org)
 
 **Tiny and precise decimal calculator for AI agents via Model Context Protocol (MCP)**. Add, subtract, multiply, divide arrays of numbers with exact precision. No more LLM math hallucinations!
