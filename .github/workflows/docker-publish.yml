@@ -18,7 +18,7 @@ jobs:
 
       - name: Docker meta (tags)
         id: meta
-        uses: docker/metadata-action@v6
+        uses: docker/metadata-action@v5
         with:
           images: denysflnk/calculator-mcp
           tags: |
