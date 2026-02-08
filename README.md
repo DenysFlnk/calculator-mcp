@@ -1,6 +1,6 @@
 # Calculator MCP Server 🧮
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/yourusername/calculator-mcp)](https://hub.docker.com/r/yourusername/calculator-mcp)
+[![Docker Pulls](https://img.shields.io/docker/pulls/denysflnk/calculator-mcp)](https://hub.docker.com/r/denysflnk/calculator-mcp)
 [![GitHub stars](https://img.shields.io/github/stars/DenysFlnk/calculator-mcp)](https://github.com/DenysFlnk/calculator-mcp/)
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue)](https://python.org)
 
@@ -26,7 +26,7 @@
 **HTTP Mode** (apps/integrations):
 
 ```bash
-docker run -d --name calc-mcp -p 8000:8000 -e USE_HTTP=true yourusername/calculator-mcp:latest
+docker run -d --name calc-mcp -p 8000:8000 -e USE_HTTP=true denysflnk/calculator-mcp:latest
 ```
 
 Call: `POST http://localhost:8000/mcp`
@@ -34,7 +34,7 @@ Call: `POST http://localhost:8000/mcp`
 **Stdio Mode** (Claude spawn):
 
 ```bash
-docker run --rm -i yourusername/calculator-mcp:latest
+docker run --rm -i denysflnk/calculator-mcp:latest
 ```
 
 **Docker compose**:
@@ -43,7 +43,7 @@ docker run --rm -i yourusername/calculator-mcp:latest
 # docker-compose.yml
 services:
   calculator:
-    image: yourusername/calculator-mcp:latest
+    image: denysflnk/calculator-mcp:latest
     ports:
       - "8000:8000"
     environment:
@@ -73,7 +73,7 @@ docker compose up -d
   "mcpServers": {
     "Calculator": {
       "command": "docker",
-      "args": ["run", "--rm", "-i", "yourusername/calculator-mcp:latest"],
+      "args": ["run", "--rm", "-i", "denysflnk/calculator-mcp:latest"],
       "autoApprove": ["add", "subtract", "multiply", "divide", "set_precision"]
     }
   }
