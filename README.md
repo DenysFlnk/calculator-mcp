@@ -8,14 +8,14 @@
 
 ## Why This Server? ✨
 
-| Feature               | This Server                               | Others (GitHub/Docker Hub) |
-| --------------------- | ----------------------------------------- | -------------------------- |
-| **Exact Decimal**     | ✅ `0.1+0.2=0.3`                          | ❌ Float errors common     |
-| **Array Math**        | ✅ `add([1.1,2.2,3.3])`                   | ❌ Single numbers only     |
-| **Runtime Precision** | ✅ `set_precision(28)`                    | ❌ Fixed/no control        |
-| **Dual Transport**    | ✅ Stdio + HTTP                           | ❌ One or the other        |
-| **Pre-built Docker**  | ✅ `docker pull && run`                   | ❌ Manual build            |
-| **Tool Descriptions** | ✅ **Full docs** (no model hallucination) | ❌ Minimal/None            |
+| Feature               | This Server                           | Others (GitHub/Docker Hub) |
+| --------------------- | ------------------------------------- | -------------------------- |
+| **Exact Decimal**     | ✅ `0.1+0.2=0.3`                      | ❌ Float errors common     |
+| **Array Math**        | ✅ `add([1.1,2.2,3.3])`               | ❌ Single numbers only     |
+| **Runtime Precision** | ✅ `set_precision(28)`                | ❌ Fixed/no control        |
+| **Dual Transport**    | ✅ Stdio + HTTP                       | ❌ One or the other        |
+| **Pre-built Docker**  | ✅ `docker pull && run`               | ❌ Manual build            |
+| **Tool Descriptions** | ✅ Full docs (no model hallucination) | ❌ Minimal/None            |
 
 **Perfect for**: Claude Desktop, LangChain agents, custom AI apps, finance/science calcs.
 
