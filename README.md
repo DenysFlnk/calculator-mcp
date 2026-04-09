@@ -74,7 +74,7 @@ docker compose up -d
     "Calculator": {
       "command": "docker",
       "args": ["run", "--rm", "-i", "denysflnk/calculator-mcp:latest"],
-      "autoApprove": ["add", "subtract", "multiply", "divide", "set_precision"]
+      "autoApprove": ["add", "subtract", "multiply", "divide", "pow", "sqrt", "sin", "cos", "set_precision"]
     }
   }
 }
@@ -82,13 +82,17 @@ docker compose up -d
 
 ## 📋 Tools
 
-| Tool          | Parameters                | Description                    | Example                  |
-| ------------- | ------------------------- | ------------------------------ | ------------------------ |
-| add           | numbers: list[float] (≥2) | Sum array exactly              | add([0.1, 0.2]) → 0.3    |
-| subtract      | numbers: list[float] (≥2) | Sequential subtract            | subtract([10, 3, 1]) → 6 |
-| multiply      | numbers: list[float] (≥2) | Product of array               | multiply([2, 3, 4]) → 24 |
-| divide        | numbers: list[float] (≥2) | Sequential divide (zero-check) | divide([100, 4]) → 25    |
-| set_precision | precision: int (0-28)     | Set decimal places             | set_precision(10)        |
+| Tool          | Parameters                | Description                                          | Example                  |
+| ------------- | ------------------------- | ---------------------------------------------------- | ------------------------ |
+| add           | numbers: list[float] (≥2) | Sum array exactly                                    | add([0.1, 0.2]) → 0.3    |
+| subtract      | numbers: list[float] (≥2) | Sequential subtract                                  | subtract([10, 3, 1]) → 6 |
+| multiply      | numbers: list[float] (≥2) | Product of array                                     | multiply([2, 3, 4]) → 24 |
+| divide        | numbers: list[float] (≥2) | Sequential divide (zero-check)                       | divide([100, 4]) → 25    |
+| pow           | base: float, exponent: float | Exponentiation (rejects negative base + frac exp) | pow(2, 10) → 1024        |
+| sqrt          | number: float             | Square root (rejects negative numbers)               | sqrt(9) → 3.0            |
+| sin           | angle: float              | Sine of angle in radians                             | sin(0) → 0.0             |
+| cos           | angle: float              | Cosine of angle in radians                           | cos(0) → 1.0             |
+| set_precision | precision: int (0-28)     | Set decimal places                                   | set_precision(10)        |
 
 **Test endpoint**:
 
