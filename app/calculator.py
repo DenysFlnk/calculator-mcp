@@ -1,3 +1,4 @@
+import math
 import os
 from decimal import Decimal, getcontext
 
@@ -72,6 +73,36 @@ def divide(numbers: list[float]) -> float:
         result /= d
 
     return float(result)
+
+
+@mcp.tool()
+def pow(base: float, exponent: float) -> float:
+    """Raise base to the power of exponent."""
+    b, e = Decimal(str(base)), Decimal(str(exponent))
+    if b < 0 and e != int(e):
+        raise ValueError("Cannot raise negative base to fractional exponent.")
+    return float(b ** e)
+
+
+@mcp.tool()
+def sqrt(number: float) -> float:
+    """Square root of a number."""
+    n = Decimal(str(number))
+    if n < 0:
+        raise ValueError("Cannot take square root of a negative number.")
+    return float(n.sqrt())
+
+
+@mcp.tool()
+def sin(angle: float) -> float:
+    """Sine of angle in radians."""
+    return math.sin(angle)
+
+
+@mcp.tool()
+def cos(angle: float) -> float:
+    """Cosine of angle in radians."""
+    return math.cos(angle)
 
 
 if __name__ == "__main__":
